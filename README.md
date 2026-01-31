@@ -2,7 +2,7 @@
 
 Workspace Hub is an all-in-one productivity web application designed to help users manage tasks, capture ideas, organize notes, and plan daily activities — all in one clean and minimal interface.
 
-🔗 Live Demo: https://premkanth.netlify.app/
+🔗 Live Demo: https://premkanths.github.io/workspace/
 
 ---
 
