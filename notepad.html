@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace Hub · Notepad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="notepad-page">
+    <header class="site-header">
+        <button id="sidebarToggle" class="menu-toggle-header" aria-label="Toggle sidebar">⋯</button>
+        <div class="logo">WorkspaceHub<span>PK</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="todo.html">To-Do</a>
+            <a href="organizer.html">BoxPad</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="notepad.html" class="active-link">Notepad</a>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle color mode">
+            <span class="theme-toggle__sun">☀️</span>
+            <span class="theme-toggle__moon">🌙</span>
+        </button>
+    </header>
+
+    <main class="notepad-layout">
+        <aside id="notepadSidebar" class="notepad-sidebar">
+            <div class="explorer-header">
+                <h2>Navigation</h2>
+                <div class="explorer-actions">
+                    <button id="newFileBtn" class="explorer-action-btn" title="New File" aria-label="Create new file">📄</button>
+                    <button id="newFolderBtn" class="explorer-action-btn" title="New Subfolder" aria-label="Create new folder">📁</button>
+                    <button id="newProjectBtn" class="explorer-action-btn" title="New Main Folder (Project)" aria-label="Create new project">+</button>
+                </div>
+            </div>
+            <div id="explorerTree" class="explorer-tree"></div>
+        </aside>
+
+        <div id="mainContent" class="main-content">
+            <div id="editorContent" class="editor-content">
+                <div class="empty-editor">
+                    <p>Select a file to get started</p>
+                    <p class="empty-hint">Create a new file or select an existing one from the sidebar</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer compact">
+        <small>Organize your thoughts with projects, files, and structured notes.</small>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
